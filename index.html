@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiang Xinran | Portfolio</title>
+    <style>
+        /* 整体日系杂志质感色调调配 */
+        body {
+            background-color: #F7F6F3; /* 带有胶片纸张感的暖白 */
+            color: #2F2F2F; /* 柔和的深炭灰，非死黑 */
+            font-family: "Playfair Display", "Garamond", "Hiragino Sans GB", "Microsoft YaHei", serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        /* 导航栏 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.5px solid #D0CFCB;
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+        }
+        nav .logo {
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        nav .links a {
+            color: #2F2F2F;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+        nav .links a:hover {
+            color: #8A9A86; /* 莫兰迪松石绿 */
+        }
+        /* 个人简介 */
+        .intro {
+            margin-bottom: 80px;
+            font-size: 18px;
+            max-width: 650px;
+        }
+        /* 作品画廊列表 - 电影感错落排版 */
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 90px;
+        }
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .project-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            background-color: #EAE9E6;
+            object-fit: cover;
+            filter: grayscale(10%) contrast(95%);
+            transition: transform 0.5s ease;
+        }
+        .project-image:hover {
+            transform: scale(1.01);
+        }
+        .project-meta {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #8A9A86;
+        }
+        .project-title {
+            font-size: 24px;
+            margin: 5px 0 10px 0;
+            font-weight: normal;
+        }
+        .project-desc {
+            font-size: 15px;
+            color: #555555;
+            text-align: justify;
+        }
+        /* 简历与关于我区域 */
+        .about-section {
+            margin-top: 100px;
+            padding-top: 60px;
+            border-top: 0.5px solid #D0CFCB;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+        .skills-badge {
+            display: inline-block;
+            background: #EAE9E6;
+            padding: 3px 10px;
+            font-size: 12px;
+            margin: 0 5px 5px 0;
+            border-radius: 3px;
+        }
+        /* 页脚联系方式 */
+        footer {
+            margin-top: 120px;
+            border-top: 0.5px solid #D0CFCB;
+            padding-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: #777777;
+        }
+        footer a {
+            color: #2F2F2F;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <div class="logo">JIANG XINRAN</div>
+        <div class="links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="intro">
+        <p style="font-size: 24px; font-style: italic; margin-bottom: 15px;">"Capturing the delicate space between critical thought and audiovisual narrative."</p>
+        <p>我是姜馨然，目前就读于伦敦大学金史密斯学院（Goldsmiths）媒体与传播学专业。我通过微观视角与跨媒介视听，解构宏大叙事，探索声音与镜头背后的人文温度。</p>
+    </div>
+
+    <div id="work" class="project-list">
+        
+        <div class="project-card">
+            <img class="project-image" src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1000&q=80" alt="After Arrival">
+            <div class="project-meta">Documentary / Observational • Role: Producer & Camera</div>
+            <h3 class="project-title">After Arrival: Two Years to Stand (2025/2026)</h3>
+            <p class="project-desc">
+                A refugee in the UK confronts public myths with lived reality, tracing a two-year journey from initial survival to gradual rebuilding, showing how structured support enables agency and participation. 
+                <br><br>
+                <span style="font-size: 13px; font-style: italic; color:#777;">*金史密斯实践视点：本片摒弃了戏剧化的宏大视角，受《For Sama》启发，通过日常生活的微观重复（官僚体制、语言障碍），展现个体在漫长时间轴上的重构过程。</span>
+            </p>
+        </div>
+
+        <div class="project-card">
+            <img class="project-image" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80" alt="Patchwork">
+            <div class="project-meta">Documentary / Immersive • Role: Sound, Light Director & Camera</div>
+            <h3 class="project-title">Patchwork (2025)</h3>
+            <p class="project-desc">
+                An immersive short documentary exploring the frontier of electronic music through the Goldsmiths Laptop Ensemble, capturing how music is reborn from circuits, code, and collaborative community.
+                <br><br>
+                <span style="font-size: 13px; font-style: italic; color:#777;">*金史密斯实践视点：聚焦数字艺术与人类情感的边界，尝试将音频波形的多轨律动内化于剪辑节奏之中，用光影捕捉代码的呼吸。</span>
+            </p>
+        </div>
+
+        <div class="project-card">
+            <img class="project-image" src="https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&w=1000&q=80" alt="ATE?">
+            <div class="project-meta">Short Drama / Dark Comedy • Role: Sound & Light Director</div>
+            <h3 class="project-title">ATE? (2025)</h3>
+            <p class="project-desc">
+                A short drama with comedic undertones that follows Penny, an individual who is obsessed with her weight. Set entirely during the night in her flat, the film explores psychological pressures and body anxiety.
+                <br><br>
+                <span style="font-size: 13px; font-style: italic; color:#777;">*金史密斯实践视点：在单一密闭的室内空间中，通过体重计的幽蓝冷光与环境黄光的剧烈对冲，外化现代个体的内心焦虑与精神规训。</span>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="about" class="about-section">
+        <div class="grid">
+            <div>
+                <h3 style="font-weight: normal; font-size: 22px;">About Me</h3>
+                <p style="font-size: 15px; color: #555;">
+                    我热衷于探索媒介营销、影视制作、广告以及策展领域。在南方都市报参与过女性安全多媒体报道，在凤凰网进行过获奖视频案例分析。我擅长从受众调研中提炼核心洞察，并将批判性思维转化为实际的影像生产力。
+                </p>
+                <p style="font-size: 15px; color: #555;">
+                    目前正在寻找 2026 年 5 月 26 日至 71 月 31 日期间，不少于 10 天的大学学分挂钩实习/工作机会（Work Placement）。
+                </p>
+            </div>
+            <div>
+                <h3 style="font-weight: normal; font-size: 22px;">Skills & Education</h3>
+                <p><strong>Goldsmiths, University of London</strong><br><span style="font-size:13px; color:#777;">BA (Hons) Media and Communications (Second-Year)</span></p>
+                
+                <div style="margin-top: 20px;">
+                    <span class="skills-badge">Premiere Pro</span>
+                    <span class="skills-badge">Avid Media Composer</span>
+                    <span class="skills-badge">Cinematic Lighting</span>
+                    <span class="skills-badge">Sound Engineering</span>
+                    <span class="skills-badge">Audience Insights</span>
+                    <span class="skills-badge">HTML Basics</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p style="font-style: italic; font-size: 16px; margin-bottom: 25px;">Let's capture stories together.</p>
+        <p>
+            <a href="mailto:xinranj06@gmail.com">Email</a> • 
+            <a href="https://instagram.com/x1nrrr_j" target="_blank">Instagram</a>
+        </p>
+        <p style="font-size: 11px; color: #aaa; margin-top: 40px;">&copy; 2026 Jiang Xinran. Built entirely for free with GitHub Pages.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
